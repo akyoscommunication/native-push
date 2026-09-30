@@ -1,0 +1,31 @@
+{
+    "name": "akyos/native-push",
+    "description": "Symfony Notifier push transport sending straight to APNs (iOS) and FCM v1 (Android), with device token storage for any Doctrine entity",
+    "type": "symfony-bundle",
+    "version": "0.1.0",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-openssl": "*",
+        "doctrine/doctrine-bundle": "^2.12|^3.0",
+        "doctrine/orm": "^3.0",
+        "symfony/console": "^7.3|^8.0",
+        "symfony/framework-bundle": "^7.3|^8.0",
+        "symfony/http-client": "^7.3|^8.0",
+        "symfony/notifier": "^7.3|^8.0"
+    },
+    "suggest": {
+        "akyos/ux-native-cli": "native:init --notification génère les apps iOS/Android qui fournissent le token et ouvrent l’url au toucher",
+        "symfony/security-bundle": "Résolveur par défaut : rattache l’appareil à l’utilisateur connecté"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akyos\\NativePushBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akyos\\NativePushBundle\\Tests\\": "tests/"
+        }
+    }
+}
