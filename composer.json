@@ -2,7 +2,7 @@
     "name": "akyos/native-push",
     "description": "Symfony Notifier push transport sending straight to APNs (iOS) and FCM v1 (Android), with device token storage for any Doctrine entity",
     "type": "symfony-bundle",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "MIT",
     "require": {
         "php": ">=8.2",
